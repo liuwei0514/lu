@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <link href="/image/favicon.ico" rel="shortcut icon" />
+    <meta charset="utf-8">
+    <title>淘会员特惠中心</title>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/tb/global/3.3.24/global-min.css">
+    <!-- E GLOBAL CSS -->
+    <!-- S GLOBAL JS -->
+    <script src="http://g.tbcdn.cn/??kissy/k/1.4.2/seed-min.js,tb/global/3.3.24/global-min.js"></script>
+    <!-- E GLOBAL JS -->
+    <link rel="stylesheet" href="http://g.tbcdn.cn/tb/press/2.2.2/layouts/1190-24-50-10.css" />
+    <link rel="stylesheet" href="http://atp.alicdn.com/tmse/7/dpl/??taojinbi-mrbq-bantou/v16/taojinbi-mrbq-bantou.css,taojinbi-mrbq-jrsx-jdtpx/v5/taojinbi-mrbq-jrsx-jdtpx.css,taojinbi-mrbq-jryh/v6/taojinbi-mrbq-jryh.css" />
+    <link rel="stylesheet" href="http://atp.alicdn.com/tmse/7/dpl/??5609/taojinbi-mrbq-bantou/taojinbi-mrbq-bantou/v16/skin/default.css,5609/taojinbi-mrbq-jrsx-jdtpx/taojinbi-mrbq-jrsx-jdtpx/v5/skin/default.css,5609/taojinbi-mrbq-jryh/taojinbi-mrbq-jryh/v6/skin/default.css" />
+    <style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        background: #f7f7f7;
+    }
+    
+    #tbg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: #000;
+        opacity: 0.8;
+        filter: progid: DXImageTransform.Microsoft.Alpha(opacity=80);
+        z-index: 20;
+        display: none;
+    }
+    
+    #hd {
+        position: fixed;
+        left: 24%;
+        top: 20%;
+        z-index: 30;
+        display: none;
+    }
+    
+    #hd a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    #hd #hdgb {
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url(../image/hdgb.png) no-repeat 0px 0px;
+        cursor: pointer;
+    }
+    
+    .con {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .con .dom {
+        width: 1090px;
+        margin: 0px auto;
+    }
+    
+    .con .dom .mo1 .topimg {
+        width: 1920px;
+        margin-left: -415px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .imga {
+        height: 125px;
+    }
+    
+    .con .dom .mo1 .imgb {
+        height: 116px;
+        line-height: 116px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-family: "微软雅黑";
+        font-size: 40px;
+        text-align: center;
+        background: #cc0b4a;
+    }
+    
+    .con .dom .mo1 .imgb span {
+        padding: 0px 25px;
+        font-size: 34px;
+    }
+    
+    .con .dom .mo1 .imgc {
+        height: 71px;
+    }
+    
+    .con .dom .mo1 .mbt {
+        width: 1090px;
+        height: 86px;
+        line-height: 86px;
+        background: url(../image/mo1/bt.jpg) no-repeat 0px 0px;
+        text-align: center;
+        color: #010101;
+        font-weight: 700;
+        font-family: "微软雅黑";
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .con .dom .mo1 .item {
+        width: 1090px;
+        height: 420px;
+        background: #fff;
+    }
+    
+    .con .dom .mo1 .item .itembt {
+        width: 1074px;
+        height: 44px;
+        line-height: 44px;
+        border-bottom: 1px solid #eceaeb;
+        font-family: "微软雅黑";
+        margin: 0px auto 15px auto;
+    }
+    
+    .con .dom .mo1 .item .itembt div {
+        height: 24px;
+        line-height: 24px;
+        float: left;
+        color: #181818;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 25px;
+        border-bottom: 1px solid #181818;
+        margin-top: 10px;
+    }
+    
+    .con .dom .mo1 .item .itemcon {
+        width: 1057px;
+        height: 370px;
+        overflow: hidden;
+        margin-left: 8px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .img {
+        width: 659px;
+        height: 350px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info {
+        width: 375px;
+        height: 350px;
+        float: left;
+        margin-left: 23px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .djs {
+        margin: 18px 0 0 3px;
+        width: 369px;
+        height: 32px;
+        /*background: url(../image/mo1/djsbg.jpg) no-repeat 0px 0px;*/
+        
+        text-indent: 34px;
+        line-height: 32px;
+        font-size: 14px;
+        color: #363135;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .djs .sj {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .djs .sj .mh {
+        color: #fd4403;
+        padding-right: 5px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .sm {
+        width: 375px;
+        height: 130px;
+        line-height: 26px;
+        font-size: 16px;
+        color: #2b2b2b;
+        font-family: "微软雅黑";
+        padding-top: 23px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha {
+        width: 375px;
+        height: 41px;
+        line-height: 41px;
+        overflow: hidden;
+        padding-top: 47px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .jg {
+        float: left;
+        font-size: 40px;
+        color: #ed1459;
+        font-family: Arial;
+        padding: 0px 10px 0px 13px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .jg span {
+        font-size: 20px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .yj {
+        float: left;
+        font-size: 12px;
+        color: #727272;
+        text-decoration: line-through;
+        line-height: 56px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .an {
+        display: block;
+        float: right;
+        margin-right: 4px;
+        width: 108px;
+        height: 37px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .gg {
+        width: 375px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 26px;
+        color: #fff;
+        background: #fa2d70;
+        font-size: 18px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo2 {
+        width: 1090px;
+        /*height:986px;*/
+        
+        background: #fff;
+        padding-top: 15px;
+    }
+    
+    .con .dom .mo2 .mbt {
+        height: 50px;
+        line-height: 50px;
+        width: 1072px;
+        margin: 0px auto;
+        border-top: 1px solid #f6f6f6;
+        border-bottom: 1px solid #f6f6f6;
+    }
+    
+    .con .dom .mo2 .mbt div {
+        height: 24px;
+        line-height: 24px;
+        float: left;
+        color: #181818;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 25px;
+        border-bottom: 1px solid #181818;
+        margin-top: 10px;
+    }
+    /*.con .dom .mo2 .bbs{
+            height:903px;
+            width:1090px;
+            background:url(../image/mo2/bg.jpg) no-repeat 50% 0px;
+            }*/
+    
+    .con .dom .mo2 .bbs .item {
+        width: 345px;
+        height: 301px;
+        float: left;
+        padding: 0px 9px;
+        position: relative;
+    }
+    
+    .con .dom .mo2 .bbs .item .jb {
+        width: 25px;
+        height: 28px;
+        padding: 2px 17px 12px 10px;
+        line-height: 14px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        left: 9px;
+        top: 9px;
+        z-inde: 3;
+        /*background: url(../image/mo2/jb.png) no-repeat 0px 0px;*/
+    }
+    
+    .con .dom .mo2 .bbs .item .tc {
+        display: none;
+        width: 360px;
+        height: 300px;
+        overflow: hidden;
+        position: absolute;
+        left: 1px;
+        top: 0px;
+        z-inde: 6;
+    }
+    
+    .con .dom .mo2 .bbs .item .img {
+        display: block;
+        width: 345px;
+        height: 185px;
+        overflow: hidden;
+        margin-top: 11px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha {
+        height: 57px;
+        padding-top: 11px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .left {
+        width: 220px;
+        height: 57px;
+        float: left;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .left .tt {
+        height: 22px;
+        line-height: 22px;
+        padding-top: 9px;
+        width: 220px;
+        overflow: hidden;
+        color: #2e2e2e;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .left .sx {
+        height: 20px;
+        line-height: 20px;
+        0 width: 220px;
+        overflow: hidden;
+        color: #b1b1b1;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right {
+        width: 125px;
+        float: left;
+        overflow: hidden;
+        line-height: 57px;
+        height: 57px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right .jg {
+        color: #ef3470;
+        font-family: "微软雅黑";
+        font-size: 46px;
+        float: left;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right .jg span {
+        font-size: 18px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right .yj {
+        color: #606060;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        float: left;
+        text-decoration: line-through;
+        line-height: 80px;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb {
+        height: 32px;
+        line-height: 32px;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sl {
+        float: left;
+        font-size: 12px;
+        color: #3d3d3d;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sl span {
+        color: #a24967;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sj {
+        float: right;
+        font-size: 14px;
+        color: #2d372c;
+        margin-right: 10px;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sj .mh {
+        color: #8c8f94;
+    }
+    
+    .con .dom .mo3 {
+        width: 1090px;
+        background: #fff;
+    }
+    
+    .con .dom .mo3 .mbt {
+        width: 1090px;
+        height: 66px;
+        line-height: 66px;
+        background: url(../image/mo3/bt.jpg) no-repeat 0px 50%;
+        text-align: center;
+        color: #010101;
+        font-weight: 700;
+        font-family: "微软雅黑";
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .con .dom .mo3 .item {
+        width: 1090px;
+        height: 350px;
+        background: #fff;
+        margin-top: 10px;
+    }
+    
+    .con .dom .mo3 .item .itemcon {
+        width: 1057px;
+        height: 370px;
+        margin-left: 8px;
+        position: relative;
+    }
+    
+    .con .dom .mo3 .item .itemcon .jb {
+        width: 25px;
+        height: 28px;
+        padding: 2px 17px 12px 10px;
+        line-height: 14px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        left: 0px;
+        top: -2px;
+        z-inde: 3;
+        background: url(../image/mo3/jb.png) no-repeat 0px 0px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .img {
+        width: 659px;
+        height: 350px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info {
+        width: 375px;
+        height: 350px;
+        float: left;
+        margin-left: 23px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .djs {
+        margin: 18px 0 0 3px;
+        width: 369px;
+        height: 32px;
+        background: url(../image/mo3/djsbg.jpg) no-repeat 0px 0px;
+        text-indent: 34px;
+        line-height: 32px;
+        font-size: 14px;
+        color: #363135;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .djs .sj {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .djs .sj .mh {
+        color: #fd4403;
+        padding-right: 5px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .sm {
+        width: 375px;
+        height: 130px;
+        line-height: 26px;
+        font-size: 16px;
+        color: #2b2b2b;
+        font-family: "微软雅黑";
+        padding-top: 23px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha {
+        width: 375px;
+        height: 41px;
+        line-height: 41px;
+        overflow: hidden;
+        padding-top: 47px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .jg {
+        float: left;
+        font-size: 40px;
+        color: #ed1459;
+        font-family: Arial;
+        padding: 0px 10px 0px 13px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .jg span {
+        font-size: 20px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .yj {
+        float: left;
+        font-size: 12px;
+        color: #727272;
+        text-decoration: line-through;
+        line-height: 56px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .an {
+        display: block;
+        float: right;
+        margin-right: 4px;
+        width: 108px;
+        height: 37px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .gg {
+        width: 375px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 26px;
+        color: #fff;
+        background: #fa2d70;
+        font-size: 18px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo2 .bbs {
+        background: #fff
+    }
+    
+    .con .dom .mo2 .bbs a {
+        width: 49%;
+        float: left;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .containner {
+        position: relative;
+        background: #D00731;
+    }
+    
+    .containner-absolute {
+        width: 1070px;
+        margin: auto;
+        overflow: hidden;
+        /*position:absolute;
+            left: 0;
+            */
+    }
+    
+    .containner-absolute img {
+        margin-left: -425px;
+        display: block;
+        float: left;
+    }
+    
+    area {
+        outline: solid 1px rgba(0, 0, 0, 0);
+    }
+    
+    map {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="tbg"></div>
+    <div id="hd" style="width:694px;height:385px;display:none">
+        <div id="hdgb"></div>
+        <img border="0" src="http://img01.taobaocdn.com/imgextra/i1/2066051344/TB2GVJWcXXXXXaGXXXXXXXXXXXX_!!2066051344.jpg" />
+    </div>
+    <div id="site-nav" style="height:28px;">
+        <iframe height="30px" style="position: absolute;top: 0;" width="100%" src="http://ju.taobao.com/tg/city/cityList.htm" scrolling="no" frameborder="0" allowtransparency="true" title=""></iframe>
+        <div style="display:block;position:absolute;width:213px;right:0;height:30px;background: #F5F5F5;top:0;"></div>
+    </div>
+    <div class="J_Module skin-default" data-name="taojinbi-mrbq-bantou" data-skin="default" data-guid="14131845326340" id="guid-14131845326340" data-version="16" data-type="3">
+        <div class="module" data-spm="1998201398">
+            <style>
+            .taojinbi-mrbq-bantou {
+                background: url("http://gtms04.alicdn.com/tps/i4/TB1lJzQGVXXXXXKaXXX4HgqMFXX-1680-262.jpg") no-repeat center top;
+                overflow: hidden;
+            }
+            
+            .taojinbi-mrbq-bantou.start {
+                background: url("http://gtms01.alicdn.com/tps/i1/TB1v88DGVXXXXbpaXXX4HgqMFXX-1680-262.jpg") no-repeat center top;
+            }
+            
+            .taojinbi-mrbq-bantou .banner .cd-lite .digital {
+                color: #ffffff;
+            }
+            
+            .taojinbi-mrbq-bantou .floatnav .cd-lite .digital {
+                color: #ffffff;
+            }
+            
+            .taojinbi-mrbq-bantou {
+                background: url("http://img02.taobaocdn.com/imgextra/i2/656040235/TB2xq9nbFXXXXb1XpXXXXXXXXXX_!!656040235.jpg") no-repeat center top;
+            }
+            </style>
+            <div class="tb-module taojinbi-mrbq-bantou">
+                <div class="w990 banner" style="height:5200px;">
+                    <div id="J_djs" class="djs cd cd-lite cd-slide">${h}<span class='fen'></span>${m}<span class='fen'></span>${s}
+                    </div>
+                    <div class="shouchang" id="j_shou"></div>
+                    <div class="ks"></div>
+                    <div class="ks startime" id="J_startime" style="display:none"></div>
+                </div>
+                <div class="floatnav" style="background:url(http://img02.taobaocdn.com/imgextra/i2/656040235/TB2kl9TbFXXXXaYXpXXXXXXXXXX_!!656040235.jpg) no-repeat center top">
+                    <a href="http://item.taobao.com/item.htm?id=44101988766" target="_blank">
+                        <div class="w990">
+                            <div class="djs cd cd-lite cd-slide">${h}<span class='fen'></span>${m}<span class='fen'></span>${s}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/taojinbi-mrbq-bantou2.js"></script>
+    <script>
+    KISSY.add("press/event", function(a) {
+        var b = a.one(window),
+            c = function() {};
+        c.ATTRS = {
+            screenWidth: {
+                value: 1190 > b.width() ? "w990" : "w1190"
+            }
+        };
+        a.extend(c, a.Base);
+        return new c
+    }, {
+        requires: ["base", "event", "node"]
+    });
+    KISSY.use("press/event,base,event,node", function(a, b) {
+        function c() {
+            1190 > e.width() ? d.hasClass("w1190") ? (d.replaceClass("w1190", "w990"), b.set("screenWidth", "w990"), b.fire("screenWidthChange", {
+                screenWidth: "w990"
+            })) : d.addClass("w990") : d.hasClass("w990") ? (d.replaceClass("w990", "w1190"), b.set("screenWidth", "w1190"), b.fire("screenWidthChange", {
+                screenWidth: "w1190"
+            })) : d.addClass("w1190")
+        }
+
+        var e = a.one(window),
+            d = a.one("html");
+        c();
+        e.on("resize", c)
+    });
+    </script>
+    <script>
+    KISSY.use("node", function(a) {
+        window.renderCallback = function(b, d) {
+            var c = a.one(b),
+                e = c.attr("data-name");
+            c.one(".tb-module").hasClass("tb-finish") || a.use(e, function(a, c) {
+                new c(b, d)
+            })
+        };
+        a.each(a.all(".J_Module"), function(b) {
+            renderCallback(b, a.one(b).one(".tb-module")[0])
+        })
+    });
+    </script>
+    <div class="containner">
+        <div class="containner-absolute">
+            <img hidefocus="true" src="http://img02.taobaocdn.com/imgextra/i2/2066051344/TB2FMCocVXXXXbjXpXXXXXXXXXX_!!2066051344.jpg" alt="">
+            <img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/2066051344/TB2mnyJcVXXXXaGXXXXXXXXXXXX_!!2066051344.jpg" alt="">
+            <img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB20JOEcVXXXXbvXXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map">
+            <map name="Map">
+                <area shape="rect" coords="479,206,717,241" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="834,210,1080,239" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1191,212,1429,240" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/2066051344/TB2NAytcVXXXXaEXpXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map2">
+            <map name="Map2">
+                <area shape="rect" coords="480,218,724,251" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="835,224,1083,251" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1192,220,1432,255" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="484,498,718,528" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="839,496,1082,530" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1197,499,1432,525" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="481,769,733,804" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="838,769,1087,805" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1192,772,1436,804" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2axazcVXXXXXiXpXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map3">
+            <map name="Map3">
+                <area shape="rect" coords="474,231,720,263" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="830,230,1079,264" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1188,228,1433,257" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="462,501,713,538" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="823,505,1073,540" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1176,508,1426,542" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="465,795,713,812" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="825,796,1073,816" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1180,794,1423,814" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/2066051344/TB2P8GBcVXXXXcOXXXXXXXXXXXX_!!2066051344.jpg" alt=""><img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2YbmRcVXXXXXJXXXXXXXXXXXX_!!2066051344.jpg" alt="">
+            <img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2mZOEcVXXXXb9XXXXXXXXXXXX_!!2066051344.jpg" alt="">
+            <img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/2066051344/TB2MBGJcVXXXXaNXXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map5">
+            <map name="Map5">
+                <area shape="rect" coords="645,9,1308,97" href="http://detail.tmall.com/item.htm?id=44101988766" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2Ld5ycVXXXXbQXXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map6">
+            <map name="Map6">
+                <area shape="rect" coords="436,208,757,296" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="801,208,1120,294" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1166,213,1484,291" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img01.taobaocdn.com/imgextra/i1/2066051344/TB2FBWPcVXXXXXUXXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map7">
+            <map name="Map7">
+                <area shape="rect" coords="437,209,758,295" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="806,210,1122,291" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1165,210,1489,289" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2J2mGcVXXXXbzXXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map8">
+            <map name="Map8">
+                <area shape="rect" coords="440,203,758,293" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="805,207,1122,288" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1164,203,1487,288" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/2066051344/TB2Og5QcVXXXXXNXXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map9">
+            <map name="Map9">
+                <area shape="rect" coords="452,230,766,314" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="815,227,1131,316" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1180,229,1493,312" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img01.taobaocdn.com/imgextra/i1/2066051344/TB2BTihcVXXXXccXpXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map10">
+            <map name="Map10">
+                <area shape="rect" coords="447,216,756,306" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="806,219,1125,304" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1171,220,1488,306" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2tjqhcVXXXXcaXpXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map11">
+            <map name="Map11">
+                <area shape="rect" coords="442,207,761,288" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="808,206,1122,293" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1170,206,1486,289" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            <img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/2066051344/TB2erGIcVXXXXa6XXXXXXXXXXXX_!!2066051344.jpg" alt="" usemap="#Map12">
+            <map name="Map12">
+                <area shape="rect" coords="433,233,745,314" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="797,227,1112,310" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+                <area shape="rect" coords="1158,226,1478,314" href="http://detail.tmall.com/item.htm?id=44241268889" target="_blank">
+            </map>
+            
+            <img src="http://img03.taobaocdn.com/imgextra/i3/1889937995/TB2evZJdXXXXXbTXpXXXXXXXXXX_!!1889937995.jpg" alt="" usemap="#Map4" hidefocus="true" >
+            <map name="Map4">
+              <area shape="rect" coords="434,416,763,464" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+              <area shape="rect" coords="800,419,1126,463" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+              <area shape="rect" coords="1166,419,1488,458" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+            </map>
+<img src="http://img04.taobaocdn.com/imgextra/i4/1889937995/TB2jrc4dXXXXXaKXXXXXXXXXXXX_!!1889937995.jpg" alt="" usemap="#Map13" hidefocus="true" >
+<map name="Map13">
+  <area shape="rect" coords="439,251,762,294" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="804,248,1129,298" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="1164,247,1491,294" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+</map>
+<img hidefocus="true" src="http://img03.taobaocdn.com/imgextra/i3/1889937995/TB2HKESdXXXXXXBXpXXXXXXXXXX_!!1889937995.jpg" alt="" usemap="#Map14" >
+
+<map name="Map14">
+  <area shape="rect" coords="439,256,762,299" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="804,248,1129,298" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="1164,247,1491,294" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+</map>
+<img hidefocus="true" src="http://img01.taobaocdn.com/imgextra/i1/1889937995/TB2Gpk2dXXXXXaMXXXXXXXXXXXX_!!1889937995.jpg" alt="" usemap="#Map15" >
+
+<map name="Map15">
+  <area shape="rect" coords="455,270,778,313" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="808,264,1133,314" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="1175,267,1502,314" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+</map>
+<img hidefocus="true" src="http://img01.taobaocdn.com/imgextra/i1/1889937995/TB2kxURdXXXXXXIXpXXXXXXXXXX_!!1889937995.jpg" alt=""  usemap="#Map16" >
+
+<map name="Map16">
+  <area shape="rect" coords="450,267,773,310" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="812,264,1137,314" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="1172,263,1499,310" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+</map>
+<img hidefocus="true" src="http://img01.taobaocdn.com/imgextra/i1/1889937995/TB2kcsGdXXXXXcJXpXXXXXXXXXX_!!1889937995.jpg" alt=""  usemap="#Map17" >
+
+<map name="Map17">
+  <area shape="rect" coords="446,259,769,302" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="812,254,1137,304" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="1173,256,1500,303" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+</map>
+<img hidefocus="true" src="http://img04.taobaocdn.com/imgextra/i4/1889937995/TB2jFIQdXXXXXabXpXXXXXXXXXX_!!1889937995.jpg" alt=""  usemap="#Map18" >
+
+<map name="Map18">
+  <area shape="rect" coords="438,277,761,320" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="803,271,1128,321" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+  <area shape="rect" coords="1167,275,1494,322" href="http://item.taobao.com/item.htm?id=44106466971" target="_blank">
+</map>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#hdgb").click(function() {
+            $('#tbg').css('display', 'none');
+            $('#hd').css('display', 'none');
+        });
+
+        function outbox() {
+            $("#imgb").animate({
+                height: "0px"
+            }, 3000);
+        }
+
+        setTimeout(function() {
+            outbox();
+        }, 5000);
+
+        var endDate = new Date();
+        var now = new Date();
+        if (now.getHours() > 21) {
+            now.setDate(now.getDate() + 2);
+            endDate = new Date(now.toDateString());
+        } else {
+            now.setDate(now.getDate() + 1);
+            endDate = new Date(now.toDateString());
+            //endDate = new Date(now.toDateString()+" 23:59:59");
+        }
+
+        // endDate.setMinutes(endDate.getMinutes() + 25 * 60 - 25, endDate.getSeconds(), 0);
+        // endDate.setSeconds(endDate.getSeconds() - 15, 0);
+
+        function ShowCountDown(divname) {
+            var doms = $("." + divname);
+            for (var i = 0; i < doms.length; i++) {
+                // dat = doms[i].attributes['time'].nodeValue;
+                // dat=dat.split(",");
+                //var endDate = new Date(dat[0],dat[1]-1,dat[2],dat[3],dat[4],dat[5]);
+
+                var now = new Date();
+                var leftTime = endDate.getTime() - now.getTime();
+                var leftsecond = parseInt(leftTime / 1000);
+                var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+                //day1 = 2;
+                var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+                //hour = -11;
+                var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+                var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+                $(doms[i]).children(".tian").html(day1);
+                $(doms[i]).children(".shi").html(hour);
+                $(doms[i]).children(".fen").html(minute);
+                $(doms[i]).children(".miao").html(second);
+                if (day1 == 0) {
+                    if (hour == 0) {
+                        if (minute == 0) {
+                            if (second == 0) {
+                                clearInterval(val);
+                            }
+                        }
+                    }
+                } else if (day1 < 0) {
+                    cc.innerHTML = "00<span>:</span>00<span>:</span>00<span>:</span>00";
+                    clearInterval(val);
+                }
+            }
+        }
+
+        var interval = 1000;
+        var val = window.setInterval(function() {
+            ShowCountDown('hddjs');
+        }, interval);
+        // $(".tcitem").mouseover(function() {
+        //     $(this).children(".tc").css('display', 'block');
+        // });
+        // $(".tcitem").mouseout(function() {
+        //     $(this).children(".tc").css('display', 'none');
+        // });
+
+        if ($.cookie('signedxx') && $.cookie('signedxx') * 1 == 1) {
+            $("#hd").hide();
+            $('#tbg').hide();
+        } else {
+            //setTimeout(function(){
+            // $('#tbg').show();
+            // $("#hd").show();
+            // $.cookie('signedxx', '1', {
+            //     expires: 70,
+            //     path: '/'
+            // });
+            //},5000);
+        }
+
+        // $('.flexslider').flexslider({
+        //     directionNav: false,
+        //     pauseOnAction: false
+        // });
+    });
+    $('.slides li').hover(function() {
+        $(this).addClass('showAd')
+    }, function() {
+        $(this).removeClass('showAd')
+    });
+
+    var pcWidth = window.innerWidth;
+    if (pcWidth > 1366) {
+        $('.side-bar').addClass('kuanPing');
+    } else {
+        $('.side-bar').removeClass('kuanPing');
+
+    }
+    </script>
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_5915167'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D5915167' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="data-spm" content="a1z1d" />
+    <meta name="keywords" content="淘宝会员，淘宝，折扣兑换，淘宝打折，竞拍，淘宝折扣商品，特色市场，名品专区，时尚女装，男士精品，女鞋配饰，居家生活，数码家电，品质内衣，母婴儿童，食品美容，户外汽车" />
+    <meta name="description" content="淘宝会员这个平台兑换、竞拍到品牌折扣商品；也可以兑换、抽奖到完全免费的商品，是淘折扣的最佳途径。" />
+    <title>会员俱乐部</title>
+    <link rel="shortcut icon" href="//img.alicdn.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="//g.alicdn.com/tb/global/3.5.5/global-min.css">
+    <style>
+    @font-face {
+        font-family: 'iconfont';
+            src: url('//at.alicdn.com/t/font_1434377595_7244773.eot');
+            /* IE9*/
+            
+            src: url('//at.alicdn.com/t/font_1434377595_7244773.eot?#iefix') format('embedded-opentype'),
+            /* IE6-IE8 */
+            
+            url('//at.alicdn.com/t/font_1434377595_7244773.woff') format('woff'),
+            /* chrome、firefox */
+            
+            url('//at.alicdn.com/t/font_1434377595_7244773.ttf') format('truetype'),
+            /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            
+            url('//at.alicdn.com/t/font_1434377595_7244773.svg#iconfont') format('svg');
+            /* iOS 4.1- */
+        }
+        
+        .conve-bd-box-close,
+        .conve-bd-box-close:hover {
+            display: block;
+            z-index: 5;
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-style: normal;
+            color: #9c9c9c;
+            background-color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .tb-icon {
+            font-family: "iconfont" !important;
+            font-size: 25px;
+            font-style: normal;
+            display: inline-block;
+            text-decoration: none;
+            -webkit-font-smoothing: antialiased;
+            text-decoration: none;
+        }
+        
+        .ks-overlay {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            z-index: 99;
+        }
+        
+        .ks-overlay-hidden {
+            visibility: hidden;
+        }
+        
+        .ks-overlay-mask-hidden {
+            display: none;
+        }
+        
+        .ks-overlay-shown {
+            visibility: visible;
+        }
+        
+        .ks-overlay-mask-shown {
+            display: block;
+        }
+        
+        .ks-overlay-mask {
+            background-color: #333333;
+            z-index: 98;
+            opacity: 0.6;
+        }
+        
+        .vip_list .vip-left-cat li {
+            display: none;
+        }
+        
+        iframe {
+            margin: auto;
+        }
+    </style>
+    <script src="//g.alicdn.com/kissy/k/1.4.8/seed-min.js" charset="utf-8"></script>
+    <script>
+    KISSY.add('showImg', function(S, require, exports, module) {
+        var Node = require('node');
+        var $ = Node.all;
+
+        var Overlay = require('overlay');
+        var hash = location.search.replace("?","").split("&");
+        var link,overlayImg;
+        for (var i = 0; i < hash.length; i++) {
+            if(hash[i].search("link")>-1){
+                link = decodeURIComponent(hash[i].split("=")[1]);
+            }
+            if(hash[i].search("overlayImg")>-1){
+                overlayImg = decodeURIComponent(hash[i].split("=")[1]);
+            }
+        };
+        var content = '<div class="img-wrapper"><a class="conve-bd-box-close J_conveClose tb-icon">&#xe601;</a><img src="' + overlayImg + '"></div>';
+        S.all("iframe").attr("src",link);
+        var overlay = new Overlay({
+            content: content,
+            width: 669,
+            height: 654,
+            align: {
+                points: ['cc', 'cc']
+            },
+            effect: {
+                effect: "slide",
+                duration: 0.2
+            },
+            mask: {
+                closeOnClick: true,
+                effect: 'fade',
+                duration: 0.2
+            }
+        });
+        overlay.show();
+        $(document).delegate("click", ".J_conveClose", function(e) {
+            overlay.hide();
+        })
+    });
+    KISSY.use('showImg');
+    </script>
+</head>
+
+<body>
+    <iframe height="50000px" width="100%" src="" scrolling="no" frameborder="0" allowtransparency="true" title=""></iframe>
+</body>
+
+</html>
