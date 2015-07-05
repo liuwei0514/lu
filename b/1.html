@@ -258,7 +258,7 @@
                         </p>
                     </div>
                     <ul>
-                        <li class="vip-item transition" link="http://item.taobao.com/item.htm?id=44036647182" overlayImg="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg">
+                        <li class="vip-item vip-itemx transition" link="http://item.taobao.com/item.htm?id=44036647182" overlayImg="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg">
                             <div class="pic">
                                 <a href="/c/1.html" target="_blank" class=""><img src="http://img.alicdn.com/imgextra/i3/2066051344/TB2QwENdpXXXXcMXXXXXXXXXXXX_!!2066051344.jpg" alt="" data-ks-lazyload="//img01.taobaocdn.com/imgextra/i1/2066051344/TB2v520dpXXXXauXXXXXXXXXXXX_!!2066051344.jpg" width="228" height="228"></a>
                             </div>
@@ -276,7 +276,7 @@
                                 <a href="/c/1.html"><img src="images/2.jpg" height="78" width="167" alt=""></a>
                             </div>
                         </li>
-                        <li class="vip-item transition" link="http://detail.tmall.com/item.htm?_u=t1tias8g664e&id=44241268889" overlayImg="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg">
+                        <li class="vip-item vip-itemx transition" link="http://detail.tmall.com/item.htm?_u=t1tias8g664e&id=44241268889" overlayImg="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg">
                             <div class="pic">
                                 <a href="/c/1.html" target="_blank" class=""><img src="http://img.alicdn.com/imgextra/i1/2066051344/TB2VYQYdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg" alt="" data-ks-lazyload="//img02.taobaocdn.com/imgextra/i2/2066051344/TB290fGdpXXXXaWXpXXXXXXXXXX_!!2066051344.jpg" width="228" height="228"></a>
                             </div>
@@ -294,7 +294,7 @@
                                 <a href="/c/1.html"><img src="images/2.jpg" height="78" width="167" alt=""></a>
                             </div>
                         </li>
-                        <li class="vip-item transition" link="http://item.taobao.com/item.htm?id=520268184291" overlayImg="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg">
+                        <li class="vip-item vip-itemx transition" link="http://item.taobao.com/item.htm?id=520268184291" overlayImg="http://img03.taobaocdn.com/imgextra/i3/2066051344/TB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg">
                             <div class="pic">
                                 <a href="/c/1.html" target="_blank" class=""><img src="http://img.alicdn.com/imgextra/i1/2066051344/TB2fTgJdpXXXXXoXpXXXXXXXXXX_!!2066051344.jpg" alt="" data-ks-lazyload="//img03.taobaocdn.com/imgextra/i3/2066051344/TB2nJ_KdpXXXXc1XXXXXXXXXXXX_!!2066051344.jpg" width="228" height="228"></a>
                             </div>
@@ -783,11 +783,13 @@
                 currentTarget = e.currentTarget;
             var elem = S.get(currentTarget);
             var item = S.DOM.parent(elem,".vip-item");
-            var link = encodeURIComponent(item.attributes['link'].value);
-            var overlayImg = encodeURIComponent(item.attributes['overlayImg'].value);
-
-            var href = "/b/2.html?link="+link+"&overlayImg="+overlayImg;
-            S.one(elem).attr("href",href);
+            if(S.DOM.parent(elem,".vip-itemx")){
+            }else{
+                var link = encodeURIComponent(item.attributes['link'].value);
+                var overlayImg = encodeURIComponent(item.attributes['overlayImg'].value);
+                var href = "/b/2.html?link="+link+"&overlayImg="+overlayImg;
+                S.one(elem).attr("href",href);
+            }
         })
     });
     });
