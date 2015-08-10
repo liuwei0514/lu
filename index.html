@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+
+<head>
+    <title>转一下－一款网购人群分享购物心得和购物信息的互动性APP</title>
+    <base href="http://www.iqianggou.com/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="“转一下”app是一款网购人群分享购物心得和购物信息的互动性APP，为APP使用者提供有效的购物信息。并集成了各大购物平台的打折促销商品，方便使用者购买以及一键分享。">
+    <meta name="keywords" content="周边商品,优惠券,折扣,美食,美容,咖啡,甜品,蛋糕,省钱,联通,美甲,美发,优惠,护肤,啤酒,炸鸡,车,亲子,瘦身,餐饮,券,折扣,烘焙,点餐,西餐,中餐,SPA,日料">
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/third/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- REQUIRED FOR LANDING PAGE -->
+    <!--
+	<link href="assets/third/vegas/jquery.vegas.min.css" rel="stylesheet">
+	<link href="assets/third/hovericon/css/component.css" rel="stylesheet">
+        -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://www.800-taobao.com/images/favicon.png">
+</head>
+<!-- BODY WITH DATA STYPE FOR SCROLLSPY -->
+
+<body class="tooltips" id="top" data-spy="scroll" data-target="#myScrollspy">
+    <!-- START PAGE -->
+    <div class="wrapper">
+        <!-- HEADER -->
+        <div id="header-landing">
+            <!-- NAV MENU WRAPPER FOR FIXED POSITION -->
+            <div id="nav-menu">
+                <!-- NAV MENU CONTAINER -->
+                <div class="container">
+                    <!-- LOGO -->
+                    <div id="logo">
+                        <!--
+                         <h1><a href="index.html"><i><img width=40 src="images/logo.png" alt="转一下"></i> 转一下</a></h1>
+                         -->
+                        <!--<h1><i class="fa">转一下</i></h1>-->
+                        <h1><a href="http://www.800-taobao.com">转一下</a></h1>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- NAV MENU -->
+                    <div class="menus" id="myScrollspy" style="display:none;">
+                        <ul class="nav scroll-nav">
+                            <li class="active"><a href="http://www.800-taobao.com#top"><i class="fa fa-home"></i><span>首页</span></a></li>
+                            <li><a href="http://www.800-taobao.com#features"><i class="fa fa-mobile-phone"></i><span>App介绍</span></a></li>
+                            <li><a href="http://www.800-taobao.com#aboutus"><i class="fa fa-eye"></i><span>关于我们</span></a></li>
+                            <li><a href="http://www.800-taobao.com#jobs"><i class="fa fa-users"></i><span>加入我们</span></a></li>
+                            <li><a href="http://www.800-taobao.com#contact"><i class="fa fa-envelope"></i><span>联系我们</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- END NAV MENU -->
+                </div>
+                <!-- END NAV MENU CONTAINER -->
+            </div>
+            <!-- END NAV MENU FIXED POSITION -->
+            <!-- MODAL weChat QR Code -->
+            <div class="modal fade" align="middle" id="wechatQRModal" tabindex="-1" role="dialog" aria-labelledby="wechatQRModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- MODAL HEADER -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="wechatQRModalLabel">爱抢购微信服务号: iqianggou</h4>
+                        </div>
+                        <!-- MODAL BODY -->
+                        <div class="modal-body" align="middle">
+                            <img src="images/iqg_wechat_qrcode.png" class="img-responsive" width=180 alt="微信二维码">
+                            <!--
+                            <br>
+                            <a href="http://weixin.qq.com/r/4nXo8CTELnlRrWCT9yDw" title="" class="btn btn-default"><i class="fa fa-mobile"></i>点击加微信</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL weChat QR Code -->
+            <!-- MODAL qq group QR Code -->
+            <div class="modal fade" align="middle" id="qqGroupQRModal" tabindex="-1" role="dialog" aria-labelledby="qqGroupQRModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- MODAL HEADER -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="qqGroupQRModalLabel">爱抢购抢粉团: 311569419</h4>
+                        </div>
+                        <!-- MODAL BODY -->
+                        <div class="modal-body" align="middle">
+                            <img src="images/iqg_qq_group_qrcode.png" class="img-responsive" width=180 alt="qq群二维码">
+                            <!--
+                            <br>
+                            <a href="http://qm.qq.com/cgi-bin/qm/qr?k=yzKgpPRfJMcdET9KGdchVrv1NB4B4mOb" title="" class="btn btn-default"><i class="fa fa-mobile"></i>点击加qq群</a>
+                                 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL qq group QR Code -->
+            <!-- HEADER SECTION CONTENT -->
+            <div class="awesome-slogan">
+                <br>
+                <h2 style="font-family:Arial,'Lato', Calibri, sans-serif;">一款网购人群分享购物心得和购物信息的互动性APP</h2>
+                <br>
+                <!--
+                <h4>身边促销天天抢，价格砍到满意我才买</h4>
+                 -->
+                	<h4>COMMING SOON !</h4>
+
+                <p>
+                    <img width=60 style="border:1px solid white; border-radius:12px" src="http://www.800-taobao.com/images/logo.png" alt="爱抢购">
+                </p>
+                <br>
+                <p>
+                    <a id="iqg-ios-dl" href="http://www.800-taobao.com#" data-href="http://www.800-taobao.com#" title="iPhone版下载" target="_new" class="btn btn-default btn-app-download">&nbsp<i class="fa fa-apple"></i>iPhone版下载&nbsp</a>
+                    <a id="iqg-android-dl" href="http://www.800-taobao.com/android-release.apk" data-href="http://www.800-taobao.com/android-release.apk" id="link_addl" title="Android版下载" target="_new" class="btn btn-default btn-app-download">
+                        <i class="fa fa-android"></i>Android版下载</a>
+
+                    <!--
+                 <a href="https://itunes.apple.com/app/id567647683" title="" class="btn btn-default btn-teplok"><i class="fa fa-apple"></i>iPhone版下载 </a>
+                 <a href="http://www.iqianggou.com/download.php?appType=android" title="" class="btn btn-default btn-teplok"><i class="fa fa-android"></i>Android版下载</a>
+                 -->
+                    
+                </p>
+                <p>
+                    <img width=100 src="http://www.800-taobao.com/images/qrcode.png" alt="扫描二维码">
+                </p>
+                <div class="clear"></div>
+            </div>
+            <!-- END HEADER SECTION CONTENT -->
+        </div>
+        <!-- END HEADER -->
+        <!-- SEECTION THEME COLOR -->
+        <!-- END SECTION THEME COLOR -->
+        <!-- END SECTION ABOUT US -->
+        <!-- SECTION JOBS  -->
+        <div class="section-page-landing section-grey" id="aboutus"  style="display:none;">
+            <div class="inner-section">
+                <div class="container">
+                    <h2 class="text-center" style="color:#dfdfdf">关于我们</h2>
+                    <h4 class="text-left" style="color:#a0a0a0">
+                        上海多维度网络科技有限公司，由多名资深O2O创业者创建，并已获三家知名风险投资机构A轮融资。我们独创发明了社交性反向竞价模式的【爱抢购】App，一经推出即荣登苹果 App Store 生活类排名前三，仅仅数月即在上海北京等地O2O应用领域获得领先地位。对于商户来说【爱抢购】是每天能带来新顾客的免费的广告平台，上线以来的13个月我们已为数千家商户带来超过百万以上的新顾客。对于用户来说【爱抢购】则是一个有趣的超级省钱工具。价格您能做主的【爱抢购】，正在低调中凭借良好口碑快速进入成千上万的实体商户和每月成倍增长的年轻用户群。
+					</h4>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION ABOUT US -->
+        <!-- SECTION JOBS  -->
+        <!-- MODAL weChat jobs PHP -->
+        <div class="modal fade" align="middle"  style="display:none;" id="jobPhpModal" tabindex="-1" role="dialog" aria-labelledby="jobPhpModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobPhpModalLabel">PHP 高级开发工程师</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                        岗位职责:
+                        </h4> 1. 承担关键功能设计开发，参与云服务器架构搭建；
+                        <br> 2. 持续重构业务代码、框架，开发自动化脚本，优化架构。
+                        <h4>
+                        职位要求:
+                        </h4> 1. 愿意挑战 Linux/Mac 桌面办公；
+                        <br> 2. 3年及以上 PHP 开发经验，理解 REST、HTTP 协议、OAuth 优先；
+                        <br> 3. 注重代码规范（PEAR Coding Standards）、文档（PHPDoc）、单元测试（PHPUnit），有 PEAR 作品优先；
+                        <br> 4. 熟练使用 MySQL，熟悉命令优先；
+                        <br> 5. 理解 MVC，并能迅速切入不熟悉的框架，熟练使用Exception、ORM；
+                        <br> 6. 熟练使用 Linux 命令，能开发 Bash 脚本；
+                        <br> 7. 熟悉 jQuery、W3C 标准 HTML、CSS；
+                        <br> 8. 了解过 Android 或 iOS 开发的优先；
+                        <br> 9. 参与过10人以上技术团队合作开发的优先；
+                        <br> 10. 熟练阅读英文文档（Google、Facebook、PayPal），熟练使用英文网站（StackOverflow、GitHub），英语口语能力无要求。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs PHP -->
+        <!-- MODAL jobs UI -->
+        <div class="modal fade" align="middle"  style="display:none;" id="jobUIModal" tabindex="-1" role="dialog" aria-labelledby="jobUIModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobUIModalLabel">UI 设计师</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 负责移动互联网产品的 UI 设计；
+                        <br> 2. 与团队协作，完成产品原型设计。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 要求熟练掌握：Photoshop、Adobe Illustrator、CorelDRAW 等设计软件；
+                        <br> 2. 有手机 App UI 设计经验，熟悉 iOS、Android 设计规范者优先；
+                        <br> 3. 平面美术相关专业，有一定的设计经验，勤奋耐劳有较好的审美观；
+                        <br> 4. 热爱设计行业，思维敏锐，工作认真细致，有良好的人际沟通能力和高度的责任感及团队精神；
+                        <br> 5. 投递简历时请附上个人作品。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs UI -->
+        <!-- MODAL jobs App Marketing -->
+        <div class="modal fade" align="middle"  style="display:none;" id="jobAppMarketingModal" tabindex="-1" role="dialog" aria-labelledby="jobAppMarketingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobAppMarketingModalLabel">App 渠道运营（推广）经理</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 至少一年以上移动互联网或互联网公司市场推广经验；
+                        <br> 2. 对安卓、iOS 渠道有一定的推广经验；
+                        <br> 3. 善于分析归纳数据，并基于数据做出相应的渠道运作推广方案；
+                        <br> 4. 具备优秀的渠道开拓和沟通技巧，执行能力强；
+                        <br> 5. 有独立思考能力，动手能力强，有良好的沟通能力，对移动互联网有强烈兴趣。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 开拓安卓、iOS 客户端推广渠道，完成推广的 KPI 指标；
+                        <br> 2. 与线上市场渠道、线下运营商或预装渠道展开 BD 合作与洽谈，维系好关系；
+                        <br> 3. 做好推广渠道数据监控、跟踪，并作出相应的报告；
+                        <br> 4. 收集用户对产品反馈，提升用户体验；
+                        <br> 5. 商户与公司联合活动的项目协调。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs App Marketing -->
+        <!-- MODAL jobs Brand -->
+        <div class="modal fade" align="middle"  style="display:none;" id="jobBrandModal" tabindex="-1" role="dialog" aria-labelledby="jobBrandModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobBrandModalLabel">高级品牌推广经理</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 全面负责移动互联网品牌推广；
+                        <br> 2. 建立和维护主流媒体资源（所括主流的传统媒体及网络媒体尤其是科技媒体），高效利用各类媒体来执行品牌推广计划；
+                        <br> 3. 在各大城市组织或参与大型行业会议以推广品牌。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 3年以上互联网品牌推广经验或相关行业公共关系（PR）从业经验；
+                        <br> 2. 有相关互联网或移动应用品牌推广经验者优先；
+                        <br> 3. 有成功的互联网或App品牌建设案例者优先考虑；
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs Brand -->
+        <!-- MODAL jobs iOS -->
+        <div class="modal fade" align="middle"  style="display:none;" id="jobiOSModal" tabindex="-1" role="dialog" aria-labelledby="jobiOSModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobiOSModalLabel">iOS 软件开发工程师</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 承担关键功能设计开发，参与构建；
+                        <br> 2. 确保代码质量和进度；
+                        <br> 3. 优化框架代码和业务代码。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 计算机相关专业大学本科及以上学历；
+                        <br> 2. 精通 Objective-C，具备2年及以上的 iOS 开发经验；
+                        <br> 3. 对于 Cocoa 设计模式有所掌握，并运用过其中的一些模式；
+                        <br> 4. 熟练掌握并灵活运用 Cocoa Framework, 了解流行的第三方开源库；
+                        <br> 5. 能够清楚了解 iOS 7 和 iOS 7 以下的界面差异和适配；
+                        <br> 6. 对于项目版本管理工具有所了解和掌握；
+                        <br> 7. 负责必要的代码整理、重构工作；
+                        <br> 8. 思路清晰，快速的学习能力；
+                        <br> 9. 较好的解决问题能力，并能找出最佳的技术方案；
+                        <br> 10. 工作认真负责，良好的沟通学习能力，逻辑思维能力和团队合作能力；
+                        <br> 11. 英文熟练读写，有项目管理经验优先。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs iOS -->
+        <!-- MODAL jobs Android -->
+        <div class="modal fade"  style="display:none;" align="middle" id="jobAndroidModal" tabindex="-1" role="dialog" aria-labelledby="jobAndroidModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobAndroidModalLabel">Android 高级开发工程师</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 承担关键功能设计开发，参与构建；
+                        <br> 2. 确保代码质量和进度；
+                        <br> 3. 优化框架代码和业务代码。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 愿意挑战 Linux/Mac 桌面办公；
+                        <br> 2. 三年以上 Android SDK 使用和开发经验，精通 Java 语言；
+                        <br> 3. 良好的用户界面品味和开发技巧；
+                        <br> 4. 熟悉 Linux 环境下的开发和命令行操作；
+                        <br> 5. 熟悉版本控制工具 SVN，有 Git 经验更佳；
+                        <br> 6. 熟悉 HTTP 等网络协议，了解 C/S 架构的通信原理。
+                        <h4>
+                            加分点:
+                        </h4> 1. 在 Google Play 或是一些安卓市场上有成熟的作品；
+                        <br> 2. 熟悉 SQLite 数据库，熟练使用 SQL 语言；
+                        <br> 3. 了解 Android 3.0+ 引入的新 API；
+                        <br> 4. 了解 Web 开发技术，如 REST API；
+                        <br> 5. 参与过一些开源项目；
+                        <br> 6. 对技术有热情并喜欢追随新的技术潮流。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs Android -->
+        <!-- MODAL jobs PM -->
+        <div class="modal fade"  style="display:none;" align="middle" id="jobPMModal" tabindex="-1" role="dialog" aria-labelledby="jobPMModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobPMModalLabel">产品经理</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 负责爱抢购移动客户端产品调研、分析及产品设计；制定产品规范，做出产品的全面设计，如功能，特性，使用流程，UI/UE，性能要求等；
+                        <br> 2. 分析产品发展趋势，结合用户需求提出产品优化及创新需求，持续对产品实施优化和升级，监控规划设计至测试发布的全过程；
+                        <br> 3. 与技术团队紧密配合，快速、高效推动产品设计、研发、运营及推广；
+                        <br> 4. 配合相关的市场、商务部门，在产品层面对合作类项目予以支持。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 3年以上互联网产品从业经验，1年以上移动产品经验；
+                        <br> 2. 具备手机客户端软件产品设计和管理经验，精通移动互联网产品和服务；
+                        <br> 3. 善于产品设计，对产品分析、数据分析、竞争分析等有见解；
+                        <br> 4. 沟通执行能力强，具备一定的 UI 设计能力。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs PM -->
+        <!-- MODAL jobs Businese -->
+        <div class="modal fade" align="middle" id="jobBusineseModal" tabindex="-1" role="dialog" aria-labelledby="jobBusineseModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="jobBusineseModalLabel">商户开发与服务经理/主管/专员</h4>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body" align="left">
+                        不问出处、不看学历和年龄、不论背景，不需要违背良心去忽悠人，也不需要把东西卖给别人，只需要把对别人有好处没坏处的合作模式介绍给别人即可。笼统地来说我们需要的是销售精英，因为我们认为会销售者，乃人间精英，所以我们需要你代表公司良好的形象面对世人，让你在我们这个独创发明的商业模式中留下你难以磨灭的印迹，展现你有朝气、有活力、有科技创业公司招人喜欢的范儿。自信是这块料的都请来喝杯咖啡聊一聊。我们提供业界非常有竞争力的薪酬标准且上不封顶。
+                        <h4>
+                            岗位职责:
+                        </h4> 1. 负责线下快速餐饮业、快速消费品行业、零售业和生活服务类连锁商户等渠道的业务开发；
+                        <br> 2. 能够探索客户需求，制定个性化的营销方案，与商家谈判并达成合作；
+                        <br> 3. 主动寻找并拜访客户，并完成销售指标。
+                        <h4>
+                            职位要求:
+                        </h4> 1. 大专及以上学历，专业不限；
+                        <br> 2. 有相关行业（本地生活服务类网站、快速餐饮业、快速消费品品牌等）销售经验，有市场渠道优先；
+                        <br> 3. 为人正直，诚实可靠，以公司利益为重；
+                        <br> 4. 热爱销售，善于挑战，积极乐观，并有良好的抗压能力和沟通能力，具有勇于完成业绩指标的挑战精神。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL jobs Businese -->
+        <div class="section-page-landing section-grey"  style="display:none;" id="jobs">
+            <div class="inner-section">
+                <div class="container">
+                    <h2 class="text-center" style="color:#dfdfdf">加入我们</h2>
+                    <h4 class="text-left" style="color:#a0a0a0">
+                        如果你不想继续在大公司的温室里平淡的老去，如果你不想继续在普通互联网公司的红海里艰难地游向未知的彼岸，如果你还有着那颗年轻心脏应有的激情，如果你想除了拿一份行业水平的工资外还需要点别的，那你就应该来我们这个充满激情的梦想空间，开心之余写几行代码，就可能让众多的用户惊喜。
+                    </h4>
+                    <h5 class="text-left" style="color:#dfdfdf">团队福利：</h5>
+                    <h5 class="text-left" style="color:#a0a0a0">
+                        补充商业医疗保险（让你没有后顾之忧）
+                        <br>
+                        空气净化环境办公（让你与雾霾办公说不）
+                        <br>
+                        技术成员年终13-15薪（春节不再愁回家）
+                        <br>
+                        Mac+大屏幕办公（需要高效工作更需要关爱眼睛）
+                        <br>
+                        顺畅浏览国外网站（让你的视野不会落后于美国同行）
+                        <br>
+                        免费饮料点心（让你的工作状态不再会有低血糖）
+                        <br>
+                        外地员工入职安家补助及就近租房补帖（你休息得好公司就会发展得好）
+                        <br>
+                        全天候与技术牛人一起切磋更有机会参加各种技术大会（让自己的能力突飞猛进）
+                        <br>
+                        优秀成员期权激励（你不是为老板干而是为自己干）
+                        <br>
+                        定期团队活动（玩得好才会干得好）
+                    </h5>
+                    <div class="row">
+                        <div class="col-sm-6" align="center">
+                            <h5 class="text-left">
+                            </h5>
+                            <img width=320px src="images/team1.jpg" alt="我们的团队">
+                        </div>
+                        <div class="col-sm-6" align="center">
+                            <h5 class="text-left">
+                            </h5>
+                            <img width=320px src="images/team2.jpg" alt="我们的团队">
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-left" style="color:#a0a0a0">如果你有如下攻城本领就来我们楼下的孵咖啡坐坐吧！
+                    </h4>
+                    <p>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="PHP 高级开发工程师" data-target="#jobPhpModal">PHP 高级开发工程师</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="UI 设计师" data-target="#jobUIModal">UI 设计师</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="App 渠道运营（推广）经理" data-target="#jobAppMarketingModal">App 渠道运营（推广）经理</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="高级品牌推广经理" data-target="#jobBrandModal">高级品牌推广经理</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="iOS 软件开发工程师" data-target="#jobiOSModal">iOS 软件开发工程师</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="Android 高级开发工程师" data-target="#jobAndroidModal">Android 高级开发工程师</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="产品经理" data-target="#jobPMModal">产品经理</a>
+                        <br>
+                        <i class="fa fa-user"></i>&nbsp;<a href="http://www.800-taobao.com#fakelink" data-toggle="modal" title="商户开发与服务经理/主管/专员" data-target="#jobBusineseModal">商户开发与服务经理/主管/专员</a>
+                    </p>
+                    <p>
+                        请发简历至 <a href="mailto:hr@doweidu.com">hr@doweidu.com</a>，并注明应聘职位。
+                        <!--
+                    <strong>简历联系邮箱: </strong>hr@doweidu.com</a>
+                     -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION JOBS -->
+        <!-- SECTION CONTACT  -->
+        <div class="section-page-landing section-light-grey"  style="display:none;" id="contact">
+            <div class="inner-section">
+                <div class="container">
+                    <h2 class="text-center">联系我们</h2>
+                    <div>
+                        <address>
+                            <strong>上海多维度网络科技有限公司</strong>
+                            <br>
+                        </address>
+                        <address>
+                            <strong>地址 : </strong>上海市徐汇区钦州路100号上海市科技创业中心2号楼207室
+                            <br>
+                            <strong>邮箱 : </strong><a href="mailto:service@doweidu.com">service@doweidu.com</a>
+                            <br>
+                        </address>
+                        <!--
+                        <wb:follow-button uid="2878320134" type="gray_1" id="weibo_follow_btn"></wb:follow-button>
+                            -->
+                        <wb:follow-button uid="3276242572" type="gray_1" id="weibo_follow_btn"></wb:follow-button>
+                        <!--
+                        <address>
+                            <strong>微博: </strong><wb:follow-button uid="2878320134" type="red_1" id="weibo_follow_btn"></wb:follow-button>
+                        </address>
+                             -->
+                    </div>
+                    <form role="form" class="contact-form" id="ContactForm" method="post" action="">
+                        <div class="form-group">
+                            <input type="text" name="YourName" class="form-control" placeholder="您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="YourPhoneNumber" class="form-control" placeholder="您的电话">
+                        </div>
+                        <!--
+						<div class="row">
+							<div class="col-sm-12">
+							  <div class="form-group">
+								<input type="text" name="YourName" class="form-control" placeholder="您的姓名">
+							  </div>
+							</div>
+							<div class="col-sm-12">
+							  <div class="form-group">
+								<input type="text" name="YourPhoneNumber" class="form-control" placeholder="您的电话">
+							  </div>
+							</div>
+						</div>
+                        -->
+                        <div class="form-group">
+                            <textarea class="form-control" name="YourMessage" style="height: 90px" placeholder="请输入您的留言"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <h4 class="text-center" id="SimpleCaptcha"></h4>
+                                    <input type="text" name="captcha" class="form-control" placeholder="结果">
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <button type="submit" class="btn btn-default btn-teplok"><i class="fa fa-envelope"></i>提交</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION CONTACT -->
+        <!-- FOOTER -->
+        <footer>
+            <div class="text-center">
+                <a href="http://www.miitbeian.gov.cn" target="_new" style="color:#a0a0a0">苏ICP备14036465号-1</a>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END OF PAGE -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/third/validator/bootstrapValidator.min.js"></script>
+    <script src="assets/js/jquery.smooth-scroll.js"></script>
+    <script src="assets/third/backstretch/jquery.backstretch.min.js"></script>
+    <script>
+    $.backstretch([
+        "images/background/1.jpg",
+        "images/background/2.jpg",
+        "images/background/3.jpg",
+        "images/background/4.jpg"
+    ], {
+        fade: 750,
+        duration: 6000
+    });
+    </script>
+    <!-- REQUIRED FOR LANDING PAGE -->
+    <script src="assets/third/hovericon/js/modernizr.custom.js"></script>
+    <script src="assets/third/parallax/jquery.parallax-1.1.3.js"></script>
+    <script src="assets/third/parallax/TweenMax.min.js"></script>
+    <script src="assets/third/parallax/jquery.superscrollorama.js"></script>
+    <script src="assets/third/mixitup/jquery.mixitup.js"></script>
+    <script src="assets/third/vegas/jquery.vegas.min.js"></script>
+    <script src="assets/js/teplok-one-page.js"></script>
+    <script>
+    var lk = $('#link_addl');
+    $.get(lk.data('href'), function(data) {
+        lk.attr('href', data);
+    });
+    </script>
+</body>
+
+</html>
