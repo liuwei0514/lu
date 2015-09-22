@@ -1,0 +1,50 @@
+.index1 {
+    background-color: #ff4304;
+    text-align: center;
+    color: #882601;
+}
+.index1 .index1-logo {
+    margin-top: 10%;
+}
+
+.index1 label {
+    font-size: 1.2em;
+}
+
+
+
+.index2{
+    text-align: center;
+    background-color: #ffecc4;
+}
+.logo{
+    background-color: #ff4304;
+}
+.logo img{
+	width: 35%;
+}
+.list{
+	margin-top: 2em;
+}
+.app-rewards-color h4 {
+    line-height: 2em;
+}
+
+.app-rewards-color div {
+    font-size: 0.5em;
+    margin-bottom: 2em;
+}
+
+.app-rewards-color div span {
+    font-size: 5.5em;
+    color: red;
+}
+
+
+
+.modal-dialog-center { /* Edited classname 10/03/2014 */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

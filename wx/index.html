@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>看见</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/css.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="index1">
+    <div class="container">
+        <div class="row index1-logo">
+            <img src="images/taobaoid.png" alt="">
+        </div>
+        <div class="row">
+            <div style="width:60%; margin-left:20%;">
+                <form id="form1" action="d.html">
+                    <div class="form-group">
+                        <label for="taobaoid">请输入您的淘宝账号</label>
+                        <input type="email" class="form-control" id="taobaoid" style="margin-top:1em;" required placeholder="">
+                    </div>
+                    <button type="button" id="submit-btn" class="btn btn-success">点击确认</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+    //记录用户分享的链接打开次数
+
+    //提交 1、检查用户是否存在 2、跳转页面2
+    // var urlRoot = "http://data.800-taobao.com/api/v2/";
+    var urlRoot = "http://localhost:3000/api/v2/";
+    jQuery(document).ready(function($) {
+        var userid = location.hash.replace("#","");
+        //55fe1277c46e4df10a03866e
+        $.post(urlRoot+'ShareViewedLog', {
+            userid: userid
+        }, function(data, textStatus, xhr) {
+            /*optional stuff to do after success */
+        });
+        $("#submit-btn").click(function(event) {
+            /* Act on the event */
+            var taobaoid = $("#taobaoid").val();
+            $.post(urlRoot+'AppUser', {
+                taobaoid: taobaoid
+            }, function(data, textStatus, xhr) {
+                /*optional stuff to do after success */
+                $("#form1").attr("action",$("#form1").attr("action")+"#"+data.appUser._id);
+                $("#form1").submit();
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>
