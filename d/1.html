@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <link href="/image/favicon.ico" rel="shortcut icon" />
+    <meta charset="utf-8">
+    <title>淘会员特惠中心</title>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/tb/global/3.3.24/global-min.css">
+    <!-- E GLOBAL CSS -->
+    <!-- S GLOBAL JS -->
+    <script src="http://g.tbcdn.cn/??kissy/k/1.4.2/seed-min.js,tb/global/3.3.24/global-min.js"></script>
+    <!-- E GLOBAL JS -->
+    <link rel="stylesheet" href="http://g.tbcdn.cn/tb/press/2.2.2/layouts/1190-24-50-10.css" />
+    <link rel="stylesheet" href="http://atp.alicdn.com/tmse/7/dpl/??taojinbi-mrbq-bantou/v16/taojinbi-mrbq-bantou.css,taojinbi-mrbq-jrsx-jdtpx/v5/taojinbi-mrbq-jrsx-jdtpx.css,taojinbi-mrbq-jryh/v6/taojinbi-mrbq-jryh.css" />
+    <link rel="stylesheet" href="http://atp.alicdn.com/tmse/7/dpl/??5609/taojinbi-mrbq-bantou/taojinbi-mrbq-bantou/v16/skin/default.css,5609/taojinbi-mrbq-jrsx-jdtpx/taojinbi-mrbq-jrsx-jdtpx/v5/skin/default.css,5609/taojinbi-mrbq-jryh/taojinbi-mrbq-jryh/v6/skin/default.css" />
+    <style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        background: #f7f7f7;
+    }
+    
+    #tbg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: #000;
+        opacity: 0.8;
+        filter: progid: DXImageTransform.Microsoft.Alpha(opacity=80);
+        z-index: 20;
+        display: none;
+    }
+    
+    #hd {
+        position: fixed;
+        left: 24%;
+        top: 20%;
+        z-index: 30;
+        display: none;
+    }
+    
+    #hd a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    #hd #hdgb {
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url(../image/hdgb.png) no-repeat 0px 0px;
+        cursor: pointer;
+    }
+    
+    .con {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .con .dom {
+        width: 1090px;
+        margin: 0px auto;
+    }
+    
+    .con .dom .mo1 .topimg {
+        width: 1920px;
+        margin-left: -415px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .imga {
+        height: 125px;
+    }
+    
+    .con .dom .mo1 .imgb {
+        height: 116px;
+        line-height: 116px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-family: "微软雅黑";
+        font-size: 40px;
+        text-align: center;
+        background: #cc0b4a;
+    }
+    
+    .con .dom .mo1 .imgb span {
+        padding: 0px 25px;
+        font-size: 34px;
+    }
+    
+    .con .dom .mo1 .imgc {
+        height: 71px;
+    }
+    
+    .con .dom .mo1 .mbt {
+        width: 1090px;
+        height: 86px;
+        line-height: 86px;
+        background: url(../image/mo1/bt.jpg) no-repeat 0px 0px;
+        text-align: center;
+        color: #010101;
+        font-weight: 700;
+        font-family: "微软雅黑";
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .con .dom .mo1 .item {
+        width: 1090px;
+        height: 420px;
+        background: #fff;
+    }
+    
+    .con .dom .mo1 .item .itembt {
+        width: 1074px;
+        height: 44px;
+        line-height: 44px;
+        border-bottom: 1px solid #eceaeb;
+        font-family: "微软雅黑";
+        margin: 0px auto 15px auto;
+    }
+    
+    .con .dom .mo1 .item .itembt div {
+        height: 24px;
+        line-height: 24px;
+        float: left;
+        color: #181818;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 25px;
+        border-bottom: 1px solid #181818;
+        margin-top: 10px;
+    }
+    
+    .con .dom .mo1 .item .itemcon {
+        width: 1057px;
+        height: 370px;
+        overflow: hidden;
+        margin-left: 8px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .img {
+        width: 659px;
+        height: 350px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info {
+        width: 375px;
+        height: 350px;
+        float: left;
+        margin-left: 23px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .djs {
+        margin: 18px 0 0 3px;
+        width: 369px;
+        height: 32px;
+        /*background: url(../image/mo1/djsbg.jpg) no-repeat 0px 0px;*/
+        text-indent: 34px;
+        line-height: 32px;
+        font-size: 14px;
+        color: #363135;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .djs .sj {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .djs .sj .mh {
+        color: #fd4403;
+        padding-right: 5px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .sm {
+        width: 375px;
+        height: 130px;
+        line-height: 26px;
+        font-size: 16px;
+        color: #2b2b2b;
+        font-family: "微软雅黑";
+        padding-top: 23px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha {
+        width: 375px;
+        height: 41px;
+        line-height: 41px;
+        overflow: hidden;
+        padding-top: 47px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .jg {
+        float: left;
+        font-size: 40px;
+        color: #ed1459;
+        font-family: Arial;
+        padding: 0px 10px 0px 13px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .jg span {
+        font-size: 20px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .yj {
+        float: left;
+        font-size: 12px;
+        color: #727272;
+        text-decoration: line-through;
+        line-height: 56px;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .ha .an {
+        display: block;
+        float: right;
+        margin-right: 4px;
+        width: 108px;
+        height: 37px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo1 .item .itemcon .info .gg {
+        width: 375px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 26px;
+        color: #fff;
+        background: #fa2d70;
+        font-size: 18px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo2 {
+        width: 1090px;
+        /*height:986px;*/
+        background: #fff;
+        padding-top: 15px;
+    }
+    
+    .con .dom .mo2 .mbt {
+        height: 50px;
+        line-height: 50px;
+        width: 1072px;
+        margin: 0px auto;
+        border-top: 1px solid #f6f6f6;
+        border-bottom: 1px solid #f6f6f6;
+    }
+    
+    .con .dom .mo2 .mbt div {
+        height: 24px;
+        line-height: 24px;
+        float: left;
+        color: #181818;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 25px;
+        border-bottom: 1px solid #181818;
+        margin-top: 10px;
+    }
+    /*.con .dom .mo2 .bbs{
+            height:903px;
+            width:1090px;
+            background:url(../image/mo2/bg.jpg) no-repeat 50% 0px;
+            }*/
+    
+    .con .dom .mo2 .bbs .item {
+        width: 345px;
+        height: 301px;
+        float: left;
+        padding: 0px 9px;
+        position: relative;
+    }
+    
+    .con .dom .mo2 .bbs .item .jb {
+        width: 25px;
+        height: 28px;
+        padding: 2px 17px 12px 10px;
+        line-height: 14px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        left: 9px;
+        top: 9px;
+        z-inde: 3;
+        /*background: url(../image/mo2/jb.png) no-repeat 0px 0px;*/
+    }
+    
+    .con .dom .mo2 .bbs .item .tc {
+        display: none;
+        width: 360px;
+        height: 300px;
+        overflow: hidden;
+        position: absolute;
+        left: 1px;
+        top: 0px;
+        z-inde: 6;
+    }
+    
+    .con .dom .mo2 .bbs .item .img {
+        display: block;
+        width: 345px;
+        height: 185px;
+        overflow: hidden;
+        margin-top: 11px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha {
+        height: 57px;
+        padding-top: 11px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .left {
+        width: 220px;
+        height: 57px;
+        float: left;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .left .tt {
+        height: 22px;
+        line-height: 22px;
+        padding-top: 9px;
+        width: 220px;
+        overflow: hidden;
+        color: #2e2e2e;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .left .sx {
+        height: 20px;
+        line-height: 20px;
+        0 width: 220px;
+        overflow: hidden;
+        color: #b1b1b1;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right {
+        width: 125px;
+        float: left;
+        overflow: hidden;
+        line-height: 57px;
+        height: 57px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right .jg {
+        color: #ef3470;
+        font-family: "微软雅黑";
+        font-size: 46px;
+        float: left;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right .jg span {
+        font-size: 18px;
+    }
+    
+    .con .dom .mo2 .bbs .item .ha .right .yj {
+        color: #606060;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        float: left;
+        text-decoration: line-through;
+        line-height: 80px;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb {
+        height: 32px;
+        line-height: 32px;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sl {
+        float: left;
+        font-size: 12px;
+        color: #3d3d3d;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sl span {
+        color: #a24967;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sj {
+        float: right;
+        font-size: 14px;
+        color: #2d372c;
+        margin-right: 10px;
+    }
+    
+    .con .dom .mo2 .bbs .item .hb .sj .mh {
+        color: #8c8f94;
+    }
+    
+    .con .dom .mo3 {
+        width: 1090px;
+        background: #fff;
+    }
+    
+    .con .dom .mo3 .mbt {
+        width: 1090px;
+        height: 66px;
+        line-height: 66px;
+        background: url(../image/mo3/bt.jpg) no-repeat 0px 50%;
+        text-align: center;
+        color: #010101;
+        font-weight: 700;
+        font-family: "微软雅黑";
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .con .dom .mo3 .item {
+        width: 1090px;
+        height: 350px;
+        background: #fff;
+        margin-top: 10px;
+    }
+    
+    .con .dom .mo3 .item .itemcon {
+        width: 1057px;
+        height: 370px;
+        margin-left: 8px;
+        position: relative;
+    }
+    
+    .con .dom .mo3 .item .itemcon .jb {
+        width: 25px;
+        height: 28px;
+        padding: 2px 17px 12px 10px;
+        line-height: 14px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        left: 0px;
+        top: -2px;
+        z-inde: 3;
+        background: url(../image/mo3/jb.png) no-repeat 0px 0px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .img {
+        width: 659px;
+        height: 350px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info {
+        width: 375px;
+        height: 350px;
+        float: left;
+        margin-left: 23px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .djs {
+        margin: 18px 0 0 3px;
+        width: 369px;
+        height: 32px;
+        background: url(../image/mo3/djsbg.jpg) no-repeat 0px 0px;
+        text-indent: 34px;
+        line-height: 32px;
+        font-size: 14px;
+        color: #363135;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .djs .sj {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .djs .sj .mh {
+        color: #fd4403;
+        padding-right: 5px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .sm {
+        width: 375px;
+        height: 130px;
+        line-height: 26px;
+        font-size: 16px;
+        color: #2b2b2b;
+        font-family: "微软雅黑";
+        padding-top: 23px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha {
+        width: 375px;
+        height: 41px;
+        line-height: 41px;
+        overflow: hidden;
+        padding-top: 47px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .jg {
+        float: left;
+        font-size: 40px;
+        color: #ed1459;
+        font-family: Arial;
+        padding: 0px 10px 0px 13px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .jg span {
+        font-size: 20px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .yj {
+        float: left;
+        font-size: 12px;
+        color: #727272;
+        text-decoration: line-through;
+        line-height: 56px;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .ha .an {
+        display: block;
+        float: right;
+        margin-right: 4px;
+        width: 108px;
+        height: 37px;
+        overflow: hidden;
+    }
+    
+    .con .dom .mo3 .item .itemcon .info .gg {
+        width: 375px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 26px;
+        color: #fff;
+        background: #fa2d70;
+        font-size: 18px;
+        font-family: "微软雅黑";
+    }
+    
+    .con .dom .mo2 .bbs {
+        background: #fff
+    }
+    
+    .con .dom .mo2 .bbs a {
+        width: 49%;
+        float: left;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .containner {
+        position: relative;
+        background: #D00731;
+    }
+    
+    .containner-absolute {
+        width: 1070px;
+        margin: auto;
+        overflow: hidden;
+        /*position:absolute;
+            left: 0;
+            */
+    }
+    
+    .containner-absolute img {
+        margin-left: -425px;
+        display: block;
+        float: left;
+    }
+    
+    area {
+        outline: solid 1px rgba(0, 0, 0, 0);
+    }
+    
+    map {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="tbg"></div>
+    <div id="hd" style="width:694px;height:385px;display:none">
+        <div id="hdgb"></div>
+        <img border="0" src="http://img01.taobaocdn.com/imgextra/i1/2066051344/TB2GVJWcXXXXXaGXXXXXXXXXXXX_!!2066051344.jpg" />
+    </div>
+    <div id="site-nav" style="height:28px;">
+        <iframe height="90px" style="position: absolute;top: -62px;" width="100%" src="http://ju.taobao.com/tg/city/cityList.htm" scrolling="no" frameborder="0" allowtransparency="true" title=""></iframe>
+        <div style="display:block;position:absolute;width: 224px;right:0;height: 28px;background: #F5F5F5;top:0;"></div>
+    </div>
+    <div class="J_Module skin-default" data-name="taojinbi-mrbq-bantou" data-skin="default" data-guid="14131845326340" id="guid-14131845326340" data-version="16" data-type="3">
+        <div class="module" data-spm="1998201398">
+            <style>
+            .taojinbi-mrbq-bantou {
+                background: url("http://gtms04.alicdn.com/tps/i4/TB1lJzQGVXXXXXKaXXX4HgqMFXX-1680-262.jpg") no-repeat center top;
+                overflow: hidden;
+            }
+            
+            .taojinbi-mrbq-bantou.start {
+                background: url("http://gtms01.alicdn.com/tps/i1/TB1v88DGVXXXXbpaXXX4HgqMFXX-1680-262.jpg") no-repeat center top;
+            }
+            
+            .taojinbi-mrbq-bantou .banner .cd-lite .digital {
+                color: #ffffff;
+            }
+            
+            .taojinbi-mrbq-bantou .floatnav .cd-lite .digital {
+                color: #ffffff;
+            }
+            
+            .taojinbi-mrbq-bantou {
+                background: url("http://img02.taobaocdn.com/imgextra/i2/656040235/TB2xq9nbFXXXXb1XpXXXXXXXXXX_!!656040235.jpg") no-repeat center top;
+            }
+            </style>
+            <div class="tb-module taojinbi-mrbq-bantou">
+                <div class="w990 banner" style="height:5200px;">
+                    <div id="J_djs" class="djs cd cd-lite cd-slide">${h}<span class='fen'></span>${m}<span class='fen'></span>${s}
+                    </div>
+                    <div class="shouchang" id="j_shou"></div>
+                    <div class="ks"></div>
+                    <div class="ks startime" id="J_startime" style="display:none"></div>
+                </div>
+                <div class="floatnav" style="background:url(http://img.alicdn.com/imgextra/i2/2066051344/TB2uvFmdFXXXXXtXpXXXXXXXXXX_!!2066051344.jpg) no-repeat center top">
+                    <div class="w990">
+                        <div class="djs cd cd-lite cd-slide">${h}<span class='fen'></span>${m}<span class='fen'></span>${s}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/taojinbi-mrbq-bantou2.js"></script>
+    <script>
+    KISSY.add("press/event", function(a) {
+        var b = a.one(window),
+            c = function() {};
+        c.ATTRS = {
+            screenWidth: {
+                value: 1190 > b.width() ? "w990" : "w1190"
+            }
+        };
+        a.extend(c, a.Base);
+        return new c
+    }, {
+        requires: ["base", "event", "node"]
+    });
+    KISSY.use("press/event,base,event,node", function(a, b) {
+        function c() {
+            1190 > e.width() ? d.hasClass("w1190") ? (d.replaceClass("w1190", "w990"), b.set("screenWidth", "w990"), b.fire("screenWidthChange", {
+                screenWidth: "w990"
+            })) : d.addClass("w990") : d.hasClass("w990") ? (d.replaceClass("w990", "w1190"), b.set("screenWidth", "w1190"), b.fire("screenWidthChange", {
+                screenWidth: "w1190"
+            })) : d.addClass("w1190")
+        }
+
+        var e = a.one(window),
+            d = a.one("html");
+        c();
+        e.on("resize", c)
+    });
+    </script>
+    <script>
+    KISSY.use("node", function(a) {
+        window.renderCallback = function(b, d) {
+            var c = a.one(b),
+                e = c.attr("data-name");
+            c.one(".tb-module").hasClass("tb-finish") || a.use(e, function(a, c) {
+                new c(b, d)
+            })
+        };
+        a.each(a.all(".J_Module"), function(b) {
+            renderCallback(b, a.one(b).one(".tb-module")[0])
+        })
+    });
+    </script>
+    <div class="containner" style="background:url(https://img.alicdn.com/imgextra/i2/2066051344/TB2WRfKfVXXXXXyXpXXXXXXXXXX_!!2066051344.gif) no-repeat center top #28015c ;">
+        <div class="containner-absolute">
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2WRfKfVXXXXXyXpXXXXXXXXXX_!!2066051344.gif">
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2YFnHfVXXXXaBXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521893177210"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2b7v7fVXXXXaGXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2JevWfVXXXXa6XXXXXXXXXXXX_!!2066051344.gif">
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2BXLQfVXXXXcBXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521863763805"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2h5fUfVXXXXXuXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB23sDFfVXXXXbeXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521863763805"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB26rT_fVXXXXX8XXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2FD60fVXXXXaeXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521863763805"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2EtjDfVXXXXcAXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2kbb3fVXXXXXIXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521863763805"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2dAvOfVXXXXaCXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2jYzUfVXXXXa0XXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521863763805"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2cI_8fVXXXXawXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2Vcv2fVXXXXXYXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521863763805"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2VV_IfVXXXXb8XpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2B2rAfVXXXXbKXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521542537882"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2Ve2YfVXXXXcTXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2jw_YfVXXXXaTXXXXXXXXXXXX_!!2066051344.gif">
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2VzzZfVXXXXapXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44241268889&sku_properties=5569827:55481264"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2Z6nWfVXXXXcxXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2thvRfVXXXXcXXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44241268889&sku_properties=5569827:55481264"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2paP1fVXXXXceXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2m02CfVXXXXa1XpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44241268889&sku_properties=5569827:55481264"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB26sUXfVXXXXXuXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2ePbGfVXXXXaJXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44241268889&sku_properties=5569827:55481264"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2n3D9fVXXXXaXXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2JAzwfVXXXXcKXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44241268889&sku_properties=5569827:55481264"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2.RbVfVXXXXcZXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2tHTZfVXXXXaHXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521531451643"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2z7fPfVXXXXaeXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2r5v2fVXXXXXVXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521877794459"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2mTn8fVXXXXahXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2ASrWfVXXXXa1XXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521877794459"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2XDPQfVXXXXX0XpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2C3PEfVXXXXa9XpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521877794459"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2xXjZfVXXXXcNXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2yIDKfVXXXXXjXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521877794459"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2tcL8fVXXXXaiXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2azLCfVXXXXbZXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44161739290"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2ckL.fVXXXXXTXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2o4bGfVXXXXaNXpXXXXXXXXXX_!!2066051344.gif">
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2RPfFfVXXXXa1XpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45138914404"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB29DnKfVXXXXbaXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2Zrr3fVXXXXXhXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45138914404"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB23fr2fVXXXXb.XXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2cS_RfVXXXXciXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45138914404"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2YR61fVXXXXcaXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2RT_FfVXXXXaRXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45138914404"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2HOvPfVXXXXayXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB258zIfVXXXXX6XpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45138914404"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2ym2YfVXXXXb.XXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2uLLPfVXXXXcSXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45138914404"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2smDIfVXXXXcFXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2S1H0fVXXXXawXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45115091293"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2k8safVXXXXXnXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB289nWfVXXXXa0XXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45115091293"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2rn6NfVXXXXaNXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2532AfVXXXXcdXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45115091293"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2OFjOfVXXXXaNXpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2HrzWfVXXXXbXXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45115091293"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2N.YQfVXXXXX.XpXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2o_2LfVXXXXXnXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45115091293"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2dgf4fVXXXXbJXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2r96LfVXXXXXvXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D45115091293"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2OSv9fVXXXXamXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2p_TAfVXXXXbiXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D44115960332"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2aqj8fVXXXXaJXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2VQT4fVXXXXXcXXXXXXXXXXXX_!!2066051344.gif">
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2F2bVfVXXXXbtXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521882548170"> <img src="https://img.alicdn.com/imgextra/i2/2066051344/TB2My2ZfVXXXXcFXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2tWbFfVXXXXaKXpXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="http://www.800-taobao.com/b/2.html?overlayImg=http%3A%2F%2Fimg03.taobaocdn.com%2Fimgextra%2Fi3%2F2066051344%2FTB2xAoCdpXXXXaoXXXXXXXXXXXX_!!2066051344.jpg&link=http%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D521882548170"> <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2y2jYfVXXXXcYXXXXXXXXXXXX_!!2066051344.jpg"></a>
+            </a>
+            <img src="https://img.alicdn.com/imgextra/i3/2066051344/TB2c124fVXXXXXuXXXXXXXXXXXX_!!2066051344.gif">
+            <a target="_blank" href="https://detail.tmall.com/item.htm?id=521858363995"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB29zLIfVXXXXX2XpXXXXXXXXXX_!!2066051344.gif"></a>
+            <a target="_blank" href="https://detail.tmall.com/item.htm?id=521870069372"> <img src="https://img.alicdn.com/imgextra/i1/2066051344/TB2xAHPfVXXXXceXXXXXXXXXXXX_!!2066051344.gif"></a>
+            <a target="_blank" href="https://detail.tmall.com/item.htm?id=521858099436"> <img src="https://img.alicdn.com/imgextra/i4/2066051344/TB2EHDLfVXXXXXCXpXXXXXXXXXX_!!2066051344.gif"></a>
+        </div>
+        <script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#hdgb").click(function() {
+                $('#tbg').css('display', 'none');
+                $('#hd').css('display', 'none');
+            });
+
+            function outbox() {
+                $("#imgb").animate({
+                    height: "0px"
+                }, 3000);
+            }
+
+            setTimeout(function() {
+                outbox();
+            }, 5000);
+
+            var endDate = new Date();
+            var now = new Date();
+            if (now.getHours() > 21) {
+                now.setDate(now.getDate() + 2);
+                endDate = new Date(now.toDateString());
+            } else {
+                now.setDate(now.getDate() + 1);
+                endDate = new Date(now.toDateString());
+                //endDate = new Date(now.toDateString()+" 23:59:59");
+            }
+
+            // endDate.setMinutes(endDate.getMinutes() + 25 * 60 - 25, endDate.getSeconds(), 0);
+            // endDate.setSeconds(endDate.getSeconds() - 15, 0);
+
+            function ShowCountDown(divname) {
+                var doms = $("." + divname);
+                for (var i = 0; i < doms.length; i++) {
+                    // dat = doms[i].attributes['time'].nodeValue;
+                    // dat=dat.split(",");
+                    //var endDate = new Date(dat[0],dat[1]-1,dat[2],dat[3],dat[4],dat[5]);
+
+                    var now = new Date();
+                    var leftTime = endDate.getTime() - now.getTime();
+                    var leftsecond = parseInt(leftTime / 1000);
+                    var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+                    //day1 = 2;
+                    var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+                    //hour = -11;
+                    var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+                    var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+                    $(doms[i]).children(".tian").html(day1);
+                    $(doms[i]).children(".shi").html(hour);
+                    $(doms[i]).children(".fen").html(minute);
+                    $(doms[i]).children(".miao").html(second);
+                    if (day1 == 0) {
+                        if (hour == 0) {
+                            if (minute == 0) {
+                                if (second == 0) {
+                                    clearInterval(val);
+                                }
+                            }
+                        }
+                    } else if (day1 < 0) {
+                        cc.innerHTML = "00<span>:</span>00<span>:</span>00<span>:</span>00";
+                        clearInterval(val);
+                    }
+                }
+            }
+
+            var interval = 1000;
+            var val = window.setInterval(function() {
+                ShowCountDown('hddjs');
+            }, interval);
+            // $(".tcitem").mouseover(function() {
+            //     $(this).children(".tc").css('display', 'block');
+            // });
+            // $(".tcitem").mouseout(function() {
+            //     $(this).children(".tc").css('display', 'none');
+            // });
+
+            if ($.cookie('signedxx') && $.cookie('signedxx') * 1 == 1) {
+                $("#hd").hide();
+                $('#tbg').hide();
+            } else {
+                //setTimeout(function(){
+                // $('#tbg').show();
+                // $("#hd").show();
+                // $.cookie('signedxx', '1', {
+                //     expires: 70,
+                //     path: '/'
+                // });
+                //},5000);
+            }
+
+            // $('.flexslider').flexslider({
+            //     directionNav: false,
+            //     pauseOnAction: false
+            // });
+        });
+        $('.slides li').hover(function() {
+            $(this).addClass('showAd')
+        }, function() {
+            $(this).removeClass('showAd')
+        });
+
+        var pcWidth = window.innerWidth;
+        if (pcWidth > 1366) {
+            $('.side-bar').addClass('kuanPing');
+        } else {
+            $('.side-bar').removeClass('kuanPing');
+
+        }
+        </script>
+        <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_5915167'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D5915167' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+</body>
+
+</html>

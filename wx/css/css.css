@@ -48,3 +48,10 @@
     top: 50%;
     left: 50%;
 }
+
+.row-valid{
+    background-color: red;
+    padding: 0.2em;
+    color: white;
+    cursor: pointer;
+}

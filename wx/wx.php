@@ -119,11 +119,12 @@ function make_ticket($appId,$appsecret)
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">分享</h4>
+                    <h4 class="modal-title" style="color:#5cb85c;">恭喜您，<br>您可以开通客户端啦！</h4>
                 </div>
                 <div class="modal-body">
-                    <p>亲，也许您的朋友也有许多现金返利因未被领取而过期，点击右上角分享提醒一下他们吧！</p>
-                    <a role="button" href="#" id="btn-download" class="btn btn-success disabled">分享后可下载</a>
+                    <p style="text-indent:2em;">会员现金返利是根据您上月的购物浏览记录以及购买商品的积分和部分返利进行大数据综合评估而得，
+                    每月月底我们都将现金返利计入您的会员客户端。请及时领取，逾期作废！</p>
+                    <a role="button" href="#" id="btn-download" class="btn btn-success disabled">下载您的客户端</a>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -138,7 +139,7 @@ function make_ticket($appId,$appsecret)
             <td>{{amount}}元</td>
             <td><span class="row-{{type}}">
                     {{#if_eq type "valid"}}
-                        可领取
+                        领取
                     {{else}}
                     {{/if_eq}}
                     {{#if_eq type "expired"}}
@@ -153,6 +154,10 @@ function make_ticket($appId,$appsecret)
             </tr>
         {{/each}}
     </script>
+
+    <div id="mybackdrop" class="modal-backdrop fade in" style="display:none;">
+    </div>
+    <img id="mytip" src="images/tip.png" width="80%" alt="" style="display:none;position: absolute; z-index:1111; top: 0; right: 0; width: 90%;">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
@@ -190,6 +195,18 @@ function make_ticket($appId,$appsecret)
     </script>
     <script>
 function shared(){
+
+    $('#mytip').hide();
+    $('#mybackdrop').hide();
+
+    $('#myModal').modal({backdrop:"static"});
+    $('#myModal').on('shown.bs.modal', function() {
+        $(this).find('.modal-dialog').css({
+            'margin-top': function () {
+                return ($(this).outerHeight() / 2);
+            },
+        });
+    });
 	$("#btn-download").removeClass('disabled');
 }
 
@@ -215,17 +232,13 @@ wx.ready(function(){
 	});
 });
 
-
     //显示用户的返利、提示分享
 
     //根据用户id获取返利信息
     //微信分享js 分享成功后出现app下载链接 （这里有下载统计）
 
-
     var urlRoot = "http://data.800-taobao.com/api/v2/";
     // var urlRoot = "http://localhost:3000/api/v2/";
-
-
 
     Handlebars.registerHelper('if_eq', function(a, b, opts) {
         if(a == b) // Or === depending on your needs
@@ -237,19 +250,10 @@ wx.ready(function(){
 
     jQuery(document).ready(function($) {
 
-
-
-        $('#myModal').modal();
-
-        $('#myModal').on('shown.bs.modal', function() {
-            $(this).find('.modal-dialog').css({
-                'margin-top': function () {
-                    return ($(this).outerHeight() / 2);
-                },
-            });
-        });
-        
-
+        $("#list").delegate('.row-valid', 'click', function(event) {
+            $('#mytip').show();
+            $('#mybackdrop').show();
+        }); 
         var userid = location.hash.replace("#", "");
         $.get(urlRoot + 'Reward' + "/" + userid, function(data, textStatus, xhr) {
             /*optional stuff to do after success */
@@ -258,10 +262,8 @@ wx.ready(function(){
 
             var rewards = [];
             
-
             for (var i = data.rewards.length - 1; i >= 0; i--) {
                 rewards.push(data.rewards[i]);
-
             };
             var amount = data.rewards[0].amount;
             data.rewards = rewards;
@@ -276,10 +278,9 @@ wx.ready(function(){
                 "type": "invalid"
             };
             data.rewards.push(reward);
-            $("#amount").html(amount);
+            // $("#amount").html(amount);
             var html    = template(data);
             $("#list tbody").html(html);
-
 
         });
     });
