@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 
-$appId = 'wx138e70a07139c1c9';
-$appsecret = 'd4814128cef059527f67b127335c30d4';
+$appId = 'wx3bf173f1047e056b';
+$appsecret = 'c0b36ff8007a765d9f14b6b939dbc464';
 
 $timestamp = time();
 $jsapi_ticket = make_ticket($appId,$appsecret);
@@ -160,11 +160,11 @@ function make_ticket($appId,$appsecret)
     <img id="mytip" src="images/tip.png" width="80%" alt="" style="display:none;position: absolute; z-index:1111; top: 0; right: 0; width: 90%;">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="http://cdn.bootcss.com/handlebars.js/4.0.2/handlebars.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
 
     <script>
       /*
