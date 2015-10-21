@@ -1,0 +1,23 @@
+{
+  "name": "wx",
+  "homepage": "https://github.com/liuwei0514/lu",
+  "authors": [
+    "leslie <liuweinot@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1",
+    "bootstrap": "3.3.5",
+    "handlebars": "~4.0.3"
+  }
+}

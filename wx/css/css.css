@@ -6,12 +6,13 @@
 .index1 .index1-logo {
     margin-top: 10%;
 }
+.index1 .index1-logo img{
+    width: 65%;
+}
 
 .index1 label {
     font-size: 1.2em;
 }
-
-
 
 .index2{
     text-align: center;
